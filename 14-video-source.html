@@ -1,1 +1,24 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>video 관련 요소</title>
+</head>
+<body>
+  <!-- 방법1 : 4개의 소스 중에서 브라우저가 최적화되는 파일을 가져온다. -->
+  <video class="fullsize" poster="video/poster.jpg" controls autoplay muted style="width: 500px">
+    <!-- autoplay는 muted와 함꼐 지정해야된다. -->
+    <source src="video/google-developer-stories.mp4" type="video/mp4" />
+    <source src="video/google-developer-stories.mov" type="video/mov" />
+    <source src="video/google-developer-stories.ogg" type="video/ogg" />
+    <source src="video/google-developer-stories.webm" type="video/webm" />
+    <track src="video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    <!-- 웹에서의 자막 : .vtt 확장자를 많이 사용 (vs 동영상에서는 msi) -->
+    <!-- srclang: 자막언어, label할당한다는 뜻 -->
+  </video>
+
+  <!-- 방법2 : src를 직접 video에 넣을 수 있다. -->
+  <video class="fullsize" poster="video/poster.jpg" src="video/google-developer-stories.mp4" controls></video>
+</body>
+</html>
