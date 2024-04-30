@@ -1,1 +1,36 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iframe 요소</title>
+</head>
+<body>
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/x2XX3cNW4K0?si=XPumnL8qCnDXO1Gi" 
+    title="악동뮤지션 - give love"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  >
+  </iframe>
+
+  <!-- title 사용X, aria-label 사용O -->
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/x2XX3cNW4K0?si=XPumnL8qCnDXO1Gi"
+    aria-label="악동뮤지션 - give love"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  >
+  </iframe>
+
+  <!-- 참고) allowfullscreen : 영상을 전체화면이 가능하도록 -->
+</body>
+</html>
