@@ -1,1 +1,66 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>테이블 관련 요소</title>
+  <style>
+    table {
+      border: 1px solid #eee;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>성적표</caption>
+    <thead>
+      <tr> <!-- table row(행)-->
+        <th scope="col">&nbsp;</th> <!-- th : table head -->
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+        <th scope="col">D</th>
+      </tr>
+    </thead> <!-- table의 제목행에 해당-->
+    <tbody>
+      <tr>
+        <th scope="row">국어</th>
+        <td>100</td> <!-- td: table description -->
+        <td>80</td>
+        <td>60</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <th scope="row">수학</th>
+        <td>90</td>
+        <td>50</td>
+        <td>70</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th scope="row">영어</th>
+        <td>50</td>
+        <td>70</td>
+        <td>60</td>
+        <td>70</td>
+      </tr>
+    </tbody> <!-- table의 본문행, tbody는 여러번 사용 가능-->
+    <tfoot>
+      <tr>
+        <th scope="row">합계</th>
+        <td>240</td>
+        <td>200</td>
+        <td>190</td>
+        <td>210</td>
+      </tr>
+    </tfoot> <!-- table의 footer -->
+  </table>
+</body>
+</html>
+
+<!-- scope : row인 경우 행 방향으로 영향을 줌 -->
